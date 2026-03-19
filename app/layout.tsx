@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const fira = Fira_Sans({
+  subsets: ["latin"],      // Subconjunto de caracteres que você vai usar
+  display: "swap",         // Evita flash de fonte invisível
+  weight: ["400", "500", "700"], // Pesos que você vai usar
+  variable: "--font-fira", // opcional, para usar como CSS variable
+})
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"], 
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +29,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${fira.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+      </body>
     </html>
   );
 }
