@@ -10,6 +10,7 @@ body {
   color: var(--foreground);
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -17,8 +18,17 @@ h1 {
   font-weight: 800;
   font-style: normal;
   color: #FA198B;
-  font-size: 60px;
+  font-size: 46px;
 }
+
+h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #383838;
+  font-size: 24px;
+}
+
 
 h4, h5, p {  
   font-family: "Inter", sans-serif;
@@ -26,4 +36,8 @@ h4, h5, p {
 
 .color-white {
   color: #FFFFFF !important;
+}
+
+.bg-pink {
+  background-color: #E29EC0;
 }
