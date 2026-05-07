@@ -162,25 +162,54 @@ export default function WelcomePage() {
       </div>
 
       {/* Css Centralizado 3 elementos row */}
-      <div className="md:w-[1020] h-[600] flex flex-col md:flex-row items-center justify-between bg-pink">
-        <div className="h-auto w-1/3 flex items-center justify-center">
-          <div className="h-60 w-60 flex flex-col items-center justify-center rounded bg-fuchsia-500">
-            <p>perfil</p>
-            <Image
-              src="/images/logo/stars.png"
-              height={120}
-              width={160}
-              alt="star"
-              className="w-auto h-auto"
-            />
-            <p>modelo</p>
+      <div className="w-full h-[600] flex flex-col md:flex-col items-center justify-center bg-pink">
+        <h1 className="my-6">Avaliações de clientes</h1>
+
+        <div className="md:w-[1020] flex flex-row items-center">
+          <div className="h-auto w-1/3 flex items-center justify-center">
+            <div className="h-72 w-72 flex flex-col items-center justify-center bg-card">
+              <p>perfil</p>
+              <Image
+                src="/images/logo/stars.png"
+                height={120}
+                width={160}
+                alt="star"
+              />
+              <p className="text-center">
+                Agradecimento ao serviços da alternativa, muito rapido e de total confiança
+                </p>
+            </div>
           </div>
-        </div>
-        <div className="h-auto w-1/3 flex items-center justify-center">
-          Mode
-        </div>
-        <div className="h-auto w-1/3 flex items-center justify-center">
-          Mode
+
+          <div className="h-auto w-1/3 flex items-center justify-center">
+            <div className="h-72 w-72 flex flex-col items-center justify-center bg-card">
+              <p>perfil</p>
+              <Image
+                src="/images/logo/stars.png"
+                height={120}
+                width={160}
+                alt="star"
+              />
+              <p className="text-center">
+                Agradecimento ao serviços da alternativa, muito rapido e de total confiança
+              </p>
+            </div>
+          </div>
+
+          <div className="h-auto w-1/3 flex items-center justify-center">
+            <div className="h-72 w-72 flex flex-col items-center justify-center bg-card">
+              <p>perfil</p>
+              <Image
+                src="/images/logo/stars.png"
+                height={120}
+                width={160}
+                alt="star"
+              />
+              <p className="text-center">
+                Agradecimento ao serviços da alternativa, muito rapido e de total confiança
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

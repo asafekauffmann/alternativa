@@ -41,3 +41,8 @@ h4, h5, p {
 .bg-pink {
   background-color: #E29EC0;
 }
+
+.bg-card {
+  background-color: #72184539;
+  border-radius: 40px;
+}
